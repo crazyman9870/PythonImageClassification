@@ -1,0 +1,17 @@
+features opencv
+
+http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_table_of_contents_feature2d/py_table_of_contents_feature2d.html#py-table-of-content-feature2d
+
+classification
+
+http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_table_of_contents_ml/py_table_of_contents_ml.html#py-table-of-content-ml
+
+
+
+pyimagesearch sample chapters
+
+http://www.pyimagesearch.com/start-here-learn-computer-vision-opencv/
+
+pyimagesearch with keras tutorial
+
+http://www.pyimagesearch.com/2016/08/10/imagenet-classification-with-python-and-keras/
