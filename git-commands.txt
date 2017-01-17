@@ -1,0 +1,17 @@
+git pull origin <branch name> - get new files and data from github
+git push origin <branch name> - put changes onto github
+git status - see status of branch
+git commit -am "message" - adds modified and deleted files to commit and adds a message
+git add -A - adds new, modified, and deleted files to commit (does not actually create commit or add a message)
+git branch - lists all local branches (add -a to see all branches on repo as well)
+git branch -d (deletes local branch)
+git checkout <branch name> - changes branch (add -b to create new local branch)
+git fetch -p - gets references to new branches and removes branches that have been removed from the repo
+git merge <other branch> - merges other branch into current branch
+git reset --merge ORIG_HEAD - undo conflicting merge
+
+
+--- BE CAREFUL RUNNING THESE INSTRUCTIONS
+
+git push origin :<branch name> - removes a branch from github
+git branch -D - deletes local branch and ignores warnings
