@@ -3,6 +3,8 @@ git push origin <branch name> - put changes onto github
 git status - see status of branch
 git commit -am "message" - adds modified and deleted files to commit and adds a message
 git add -A - adds new, modified, and deleted files to commit (does not actually create commit or add a message)
+git add <file> - adds only one file to commit (does not actually create commit or add a message)
+git rm <file> - adds file deletion to commit (does not actually create commit or add a message)
 git branch - lists all local branches (add -a to see all branches on repo as well)
 git branch -d (deletes local branch)
 git checkout <branch name> - changes branch (add -b to create new local branch)
