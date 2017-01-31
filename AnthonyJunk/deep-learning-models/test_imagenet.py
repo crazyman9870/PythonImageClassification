@@ -44,11 +44,26 @@ print("[INFO] classifying image...")
 preds = model.predict(image)
 x = decode_predictions(preds)[0]
 
-(inID, label, percent) = x[0]
+
+#print('PREDS\n\n',x,'\n\n')
+inID = []
+label = []
+percent = []
+
+for x_ in x:
+	inID.append(x_[0])
+	label.append(x_[1])
+	percent.append(x_[2])
+#(inID, label, percent) = x[0]
+
 
 # display the predictions to our screen
-print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID, label, percent))
-cv2.putText(orig, "Label: {}".format(label), (10, 30),
+print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID[0], label[0], percent[0]))
+print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID[1], label[1], percent[1]))
+print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID[2], label[2], percent[2]))
+print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID[3], label[3], percent[3]))
+print("ImageNet ID: {}, Label: {}, Percent: {}".format(inID[4], label[4], percent[4]))
+cv2.putText(orig, "Label: {}".format(label[0]), (10, 30),
 	cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
 cv2.imshow("Classification", orig)
 cv2.waitKey(0)
