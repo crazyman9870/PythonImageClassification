@@ -9,6 +9,7 @@ from vgg16 import VGG16
 import numpy as np
 import argparse
 import cv2
+import os
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -19,6 +20,8 @@ args = vars(ap.parse_args())
 # load the original image via OpenCV so we can draw on it and display
 # it to our screen later
 orig = cv2.imread(args["image"])
+
+print('\n\n',args["image"])
 
 # load the input image using the Keras helper utility while ensuring
 # that the image is resized to 224x224 pxiels, the required input
