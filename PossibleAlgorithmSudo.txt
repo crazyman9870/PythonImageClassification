@@ -1,0 +1,20 @@
+initialize a data structure to contain the sub categories (buckets)
+
+initialize the list of images
+
+while the list is not empty:
+
+	grab first image and run imagenet on it
+	create new bucket with first image and its labels
+
+	for each image:
+		run the next image on imagenet
+		
+		if image labels match current bucket:
+			add the image with it labels to the bucket
+			remove the image from the list
+			
+			
+This algorithm is O(n^n) because the worst case scenario is that none of the images will match.
+However since we are using images that are related it shouldn't be the case.
+First loop shouldn't have to go through more than 3-6 times because we are expecting high match rates.
