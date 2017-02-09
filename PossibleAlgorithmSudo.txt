@@ -15,6 +15,5 @@ while the list is not empty:
 			remove the image from the list
 			
 			
-This algorithm is O(n^n) because the worst case scenario is that none of the images will match.
-However since we are using images that are related it shouldn't be the case.
-First loop shouldn't have to go through more than 3-6 times because we are expecting high match rates.
+This algorithm is O(n^k) where n is the number of images and k is the amount of sub categories that will produced.
+We predict k to be within 3-10 making the algorithm not as expensive as n^n which would be a case where non of the images are similar.
