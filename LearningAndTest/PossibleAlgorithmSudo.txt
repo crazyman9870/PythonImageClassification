@@ -1,0 +1,19 @@
+initialize a data structure to contain the sub categories (buckets)
+
+initialize the list of images
+
+while the list is not empty:
+
+	grab first image and run imagenet on it
+	create new bucket with first image and its labels
+
+	for each image:
+		run the next image on imagenet
+		
+		if image labels match current bucket:
+			add the image with it labels to the bucket
+			remove the image from the list
+			
+			
+This algorithm is O(n^k) where n is the number of images and k is the amount of sub categories that will produced.
+We predict k to be within 3-10 making the algorithm not as expensive as n^n which would be a case where non of the images are similar.
