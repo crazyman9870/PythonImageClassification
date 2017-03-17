@@ -48,11 +48,11 @@ preds = model.predict(image)
 x = decode_predictions(preds)[0]
 '''
 
-with open('labels6.csv', 'w') as csvfile:
+with open('labels.csv', 'w') as csvfile:
 	counter = 1
-	for file in os.listdir('images6'):
+	for file in os.listdir('images'):
 		#print('\nhere',file)
-		file = 'images6\\' + file
+		file = 'images\\' + file
 		# load the original image via OpenCV so we can draw on it and display
 		# it to our screen later
 		orig = cv2.imread(file)
