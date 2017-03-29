@@ -1,7 +1,7 @@
 import os
 
 
-labels = set()
+labelset = set()
 counter = 0
 with open('labels.csv', 'r') as csvfile:
 	for line in csvfile:
@@ -11,7 +11,11 @@ with open('labels.csv', 'r') as csvfile:
 			#print(len(current))
 			#print(current)
 			for x in current:
-				labels.add(x.lower())
+				labelset.add(x.lower())
+
+labels = []
+for l in labelset:
+	labels.append(l)
 
 images = {}
 counter = 0
